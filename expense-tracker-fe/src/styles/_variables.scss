@@ -1,0 +1,32 @@
+:root {
+    // Light Theme
+    --color-bg: #ffcfb3; // Soft Peach
+    --color-card: #ffffff; // White
+    --color-text: #333333; // Dark Charcoal
+    --color-text-strong: #111111; // Very Dark Charcoal
+    --color-text-light: #555555; // Medium Gray
+    --color-border: #e1e4e8; // Light Gray
+    --color-surface: #f3f4f6; // Light Surface
+    --color-hover: #6a5acd; // Slate Blue
+  
+    --color-primary: #ff6f61; // Coral
+    --color-button-text: #ffffff; // White
+}
+  
+.dark-theme {
+    --color-bg: #2c2c2c; // Dark Charcoal
+    --color-card: #1e1e1e; // Dark Card
+    --color-text: #ffffff; // White
+    --color-text-strong: #ffffff; // White
+    --color-text-light: #cccccc; // Light Gray
+    --color-border: #2d2d2d; // Dark Border
+    --color-surface: #2a2a2a; // Dark Surface
+    --color-hover: #8a7bca; // Muted Slate Blue
+  
+    --color-primary: #ff6f61; // Coral
+    --color-button-text: #ffffff; // White
+}
+  
+// SCSS variables
+$border-radius: 8px;
+$transition: all 0.3s ease;

@@ -1,0 +1,55 @@
+@use './variables' as vars;
+
+.auth-container {
+  max-width: 75vw;
+  margin: 6rem auto;
+  padding: 2rem;
+  background-color: var(--color-card);
+  border-radius: vars.$border-radius;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: vars.$transition;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    color: var(--color-text);
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--color-primary);
+    color: var(--color-button-text);
+    border: none;
+    border-radius: vars.$border-radius;
+    cursor: pointer;
+    transition: vars.$transition;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .add-expense-btn {
+    margin-top: 2rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    font-weight: 600;
+    border: 2px solid var(--color-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: vars.$border-radius;
+    transition: vars.$transition;
+
+    &:hover {
+      background-color: var(--color-primary);
+      color: var(--color-button-text);
+    }
+  }
+}

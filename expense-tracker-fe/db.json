@@ -1,0 +1,393 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123"
+    },
+    {
+      "id": "9570",
+      "username": "admi",
+      "password": "Manus"
+    },
+    {
+      "id": "1001",
+      "username": "user2",
+      "password": "user2123"
+    },
+    {
+      "id": "1002",
+      "username": "user3",
+      "password": "user3123"
+    },
+    {
+      "id": "1003",
+      "username": "user4",
+      "password": "user4123"
+    },
+    {
+      "id": "938a",
+      "username": "Mohit",
+      "password": "mohit"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Food"
+    },
+    {
+      "id": "2",
+      "name": "Travel"
+    },
+    {
+      "id": "3",
+      "name": "Bills"
+    },
+    {
+      "id": "4",
+      "name": "Entertainment"
+    },
+    {
+      "id": "5",
+      "name": "Shopping"
+    },
+    {
+      "id": "6",
+      "name": "Groceries"
+    },
+    {
+      "id": "7",
+      "name": "Medical"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "283c",
+      "title": "Shoes",
+      "amount": 324.82,
+      "date": "2025-03-10T07:51",
+      "categoryId": 5,
+      "userId": "9570"
+    },
+    {
+      "id": "baab",
+      "title": "Bag",
+      "amount": 105.42,
+      "date": "2025-03-10T16:19",
+      "categoryId": 5,
+      "userId": "1002"
+    },
+    {
+      "id": "b21d",
+      "title": "Breakfast",
+      "amount": 306.23,
+      "date": "2025-03-10T12:31",
+      "categoryId": 1,
+      "userId": "1"
+    },
+    {
+      "id": "7a52",
+      "title": "Flight",
+      "amount": 311.16,
+      "date": "2025-03-11T15:08",
+      "categoryId": 2,
+      "userId": "1001"
+    },
+    {
+      "id": "7928",
+      "title": "Dinner",
+      "amount": 128.7,
+      "date": "2025-03-11T12:48",
+      "categoryId": 1,
+      "userId": "9570"
+    },
+    {
+      "id": "724e",
+      "title": "Snacks",
+      "amount": 488.64,
+      "date": "2025-03-11T13:57",
+      "categoryId": 1,
+      "userId": "1003"
+    },
+    {
+      "id": "605f",
+      "title": "Concert",
+      "amount": 160.38,
+      "date": "2025-03-12T10:14",
+      "categoryId": 4,
+      "userId": "1002"
+    },
+    {
+      "id": "8114",
+      "title": "Water Bill",
+      "amount": 197.44,
+      "date": "2025-03-12T18:50",
+      "categoryId": 3,
+      "userId": "1"
+    },
+    {
+      "id": "703a",
+      "title": "Gas Bill",
+      "amount": 495.92,
+      "date": "2025-03-13T14:53",
+      "categoryId": 3,
+      "userId": "1003"
+    },
+    {
+      "id": "f01a",
+      "title": "Uber",
+      "amount": 201.51,
+      "date": "2025-03-14T10:59",
+      "categoryId": 2,
+      "userId": "1001"
+    },
+    {
+      "id": "8e9a",
+      "title": "Fuel",
+      "amount": 398.29,
+      "date": "2025-03-14T08:45",
+      "categoryId": 2,
+      "userId": "9570"
+    },
+    {
+      "id": "a847",
+      "title": "Gas Bill",
+      "amount": 148.98,
+      "date": "2025-03-14T15:28",
+      "categoryId": 3,
+      "userId": "1002"
+    },
+    {
+      "id": "edfa",
+      "title": "Gas Bill",
+      "amount": 463.54,
+      "date": "2025-03-15T19:14",
+      "categoryId": 3,
+      "userId": "1001"
+    },
+    {
+      "id": "0b31",
+      "title": "Internet",
+      "amount": 281.79,
+      "date": "2025-03-16T21:06",
+      "categoryId": 3,
+      "userId": "1003"
+    },
+    {
+      "id": "a584",
+      "title": "Flight",
+      "amount": 345.63,
+      "date": "2025-03-16T18:46",
+      "categoryId": 2,
+      "userId": "1"
+    },
+    {
+      "id": "0f1e",
+      "title": "Movie",
+      "amount": 94.64,
+      "date": "2025-03-16T13:22",
+      "categoryId": 4,
+      "userId": "9570"
+    },
+    {
+      "id": "709d",
+      "title": "Lunch",
+      "amount": 399.58,
+      "date": "2025-03-17T07:17",
+      "categoryId": 1,
+      "userId": "1001"
+    },
+    {
+      "id": "104e",
+      "title": "Coffee",
+      "amount": 95.23,
+      "date": "2025-03-17T23:57",
+      "categoryId": 1,
+      "userId": "1003"
+    },
+    {
+      "id": "da97",
+      "title": "Gas Bill",
+      "amount": 333.69,
+      "date": "2025-03-18T15:59",
+      "categoryId": 3,
+      "userId": "1002"
+    },
+    {
+      "id": "b629",
+      "title": "Watch",
+      "amount": 216.76,
+      "date": "2025-03-19T22:20",
+      "categoryId": 5,
+      "userId": "1002"
+    },
+    {
+      "id": "dd63",
+      "title": "Snacks",
+      "amount": 307.84,
+      "date": "2025-03-19T13:47",
+      "categoryId": 1,
+      "userId": "1003"
+    },
+    {
+      "id": "fd6b",
+      "title": "T-shirt",
+      "amount": 265.62,
+      "date": "2025-03-20T22:32",
+      "categoryId": 5,
+      "userId": "1"
+    },
+    {
+      "id": "b173",
+      "title": "Headphones",
+      "amount": 327.92,
+      "date": "2025-03-21T14:51",
+      "categoryId": 7,
+      "userId": "1001"
+    },
+    {
+      "id": "354f",
+      "title": "Dinner",
+      "amount": 182.45,
+      "date": "2025-03-22T19:40",
+      "categoryId": 6,
+      "userId": "9570"
+    },
+    {
+      "id": "e329",
+      "title": "Movie",
+      "amount": 253.63,
+      "date": "2025-03-22T23:01",
+      "categoryId": 4,
+      "userId": "1003"
+    },
+    {
+      "id": "1ab3",
+      "title": "Lunch",
+      "amount": 217.14,
+      "date": "2025-03-23T17:27",
+      "categoryId": 1,
+      "userId": "1"
+    },
+    {
+      "id": "e3b9",
+      "title": "Doctor Visit",
+      "amount": 150,
+      "date": "2025-03-24T12:13",
+      "categoryId": 7,
+      "userId": "1002"
+    },
+    {
+      "id": "c144",
+      "title": "Taxi",
+      "amount": 89.67,
+      "date": "2025-03-25T09:18",
+      "categoryId": 2,
+      "userId": "1001"
+    },
+    {
+      "id": "fef1",
+      "title": "Internet",
+      "amount": 285.12,
+      "date": "2025-03-26T11:34",
+      "categoryId": 3,
+      "userId": "9570"
+    },
+    {
+      "id": "9021",
+      "title": "Groceries",
+      "amount": 510.98,
+      "date": "2025-03-26T15:09",
+      "categoryId": 6,
+      "userId": "1003"
+    },
+    {
+      "id": "66be",
+      "title": "Snacks",
+      "amount": 45.8,
+      "date": "2025-03-27T20:11",
+      "categoryId": 1,
+      "userId": "1"
+    },
+    {
+      "id": "1379",
+      "title": "Prescription",
+      "amount": 218.4,
+      "date": "2025-03-28T18:32",
+      "categoryId": 7,
+      "userId": "1002"
+    },
+    {
+      "id": "c8d7",
+      "title": "Groceries",
+      "amount": 129.34,
+      "date": "2025-03-29T14:47",
+      "categoryId": 6,
+      "userId": "1001"
+    },
+    {
+      "id": "88c2",
+      "title": "Electricity Bill",
+      "amount": 394.61,
+      "date": "2025-03-30T16:15",
+      "categoryId": 3,
+      "userId": "1003"
+    },
+    {
+      "id": "a631",
+      "title": "Fuel",
+      "amount": 176.23,
+      "date": "2025-03-31T10:42",
+      "categoryId": 2,
+      "userId": "1"
+    },
+    {
+      "id": "e6be",
+      "title": "Movie Night",
+      "amount": 120.75,
+      "date": "2025-04-01T20:20",
+      "categoryId": 4,
+      "userId": "9570"
+    },
+    {
+      "id": "ef3c",
+      "title": "Lunch",
+      "amount": 248,
+      "date": "2025-04-02T13:33",
+      "categoryId": 1,
+      "userId": "1002"
+    },
+    {
+      "id": "021f",
+      "title": "Hospital",
+      "amount": 350,
+      "date": "2025-04-03T08:44",
+      "categoryId": 7,
+      "userId": "1003"
+    },
+    {
+      "id": "ccf2",
+      "title": "Groceries",
+      "amount": 278.91,
+      "date": "2025-04-04T11:23",
+      "categoryId": 6,
+      "userId": "1001"
+    },
+    {
+      "id": "cb71",
+      "title": "Dinner",
+      "amount": 145.39,
+      "date": "2025-04-04T20:55",
+      "categoryId": 1,
+      "userId": "1"
+    },
+    {
+      "id": "2b66",
+      "title": "SUKHDEV VAISHNO DHABA",
+      "amount": 749,
+      "date": "2025-04-15T09:29:00.000Z",
+      "categoryId": 1
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+@use './variables' as vars;
+
+.expense-list {
+  padding: 1.5rem 2rem;
+  background-color: var(--color-card);
+  color: var(--color-text);
+  border-radius: vars.$border-radius;
+  transition: vars.$transition;
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-text);
+  }
+
+  &__topbar {
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+        height: 2.5rem;
+    }
+  }
+
+  .total-spending {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+    text-align: right;
+
+    strong {
+        font-size: 1.5rem;
+    }
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    color: var(--color-text);
+    background-color: var(--color-card);
+    border-radius: vars.$border-radius;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px 3px rgb(0 0 0 / 23%);;
+    transition: vars.$transition;
+
+    thead {
+      background-color: var(--color-bg);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      color: var(--color-text);
+      border-bottom: 1px solid var(--color-border);
+
+      th {
+        padding: 1rem;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid var(--color-border);
+      }
+    }
+
+    tbody {
+      tr {
+        transition: background-color 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgba(91, 66, 243, 0.05); // subtle hover effect
+        }
+      }
+
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid var(--color-border);
+        vertical-align: middle;
+      }
+    }
+  }
+
+  p {
+    color: var(--color-text-light);
+    text-align: center;
+    font-style: italic;
+  }
+
+  .modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: var(--color-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    position: relative;
+    width: 50vw;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: var(--color-text-light);
+  }
+}
+
+
+  

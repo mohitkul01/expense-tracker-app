@@ -1,0 +1,77 @@
+.ocr-form {
+    background: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    max-width: 400px;
+    margin: auto;
+  
+    h3 {
+      margin-bottom: 1rem;
+      color: #333;
+      font-weight: 600;
+    }
+  
+    input[type='file'] {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+  
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: 500;
+      color: #555;
+    }
+  
+    input[type='text'],
+    input[type='number'] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+  
+    button {
+      margin-top: 1.25rem;
+      padding: 0.6rem 1.2rem;
+      background: #4e54c8;
+      color: white;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background: #6c63ff;
+      }
+    }
+  
+    .ocr-loader {
+      color: #4e54c8;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  
+    .ocr-raw {
+      margin-top: 1.25rem;
+      summary {
+        cursor: pointer;
+        color: #555;
+        font-size: 0.95rem;
+      }
+  
+      pre {
+        background: #f4f4f4;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border-radius: 6px;
+        white-space: pre-wrap;
+        font-size: 0.85rem;
+      }
+    }
+  }
+  

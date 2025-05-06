@@ -1,0 +1,474 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Travel"
+    },
+    {
+      "id": 3,
+      "name": "Bills"
+    },
+    {
+      "id": 4,
+      "name": "Entertainment"
+    },
+    {
+      "id": 5,
+      "name": "Shopping"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "283c",
+      "title": "Shoes",
+      "amount": 324.82,
+      "date": "2025-03-10T07:51",
+      "categoryId": 5
+    },
+    {
+      "id": "baab",
+      "title": "Bag",
+      "amount": 105.42,
+      "date": "2025-03-10T16:19",
+      "categoryId": 5
+    },
+    {
+      "id": "b21d",
+      "title": "Breakfast",
+      "amount": 306.23,
+      "date": "2025-03-10T12:31",
+      "categoryId": 1
+    },
+    {
+      "id": "7a52",
+      "title": "Flight",
+      "amount": 311.16,
+      "date": "2025-03-11T15:08",
+      "categoryId": 2
+    },
+    {
+      "id": "7928",
+      "title": "Dinner",
+      "amount": 128.7,
+      "date": "2025-03-11T12:48",
+      "categoryId": 1
+    },
+    {
+      "id": "724e",
+      "title": "Snacks",
+      "amount": 488.64,
+      "date": "2025-03-11T13:57",
+      "categoryId": 1
+    },
+    {
+      "id": "605f",
+      "title": "Concert",
+      "amount": 160.38,
+      "date": "2025-03-12T10:14",
+      "categoryId": 4
+    },
+    {
+      "id": "8114",
+      "title": "Water Bill",
+      "amount": 197.44,
+      "date": "2025-03-12T18:50",
+      "categoryId": 3
+    },
+    {
+      "id": "703a",
+      "title": "Gas Bill",
+      "amount": 495.92,
+      "date": "2025-03-13T14:53",
+      "categoryId": 3
+    },
+    {
+      "id": "f01a",
+      "title": "Uber",
+      "amount": 201.51,
+      "date": "2025-03-14T10:59",
+      "categoryId": 2
+    },
+    {
+      "id": "8e9a",
+      "title": "Fuel",
+      "amount": 398.29,
+      "date": "2025-03-14T08:45",
+      "categoryId": 2
+    },
+    {
+      "id": "a847",
+      "title": "Gas Bill",
+      "amount": 148.98,
+      "date": "2025-03-14T15:28",
+      "categoryId": 3
+    },
+    {
+      "id": "edfa",
+      "title": "Gas Bill",
+      "amount": 463.54,
+      "date": "2025-03-15T19:14",
+      "categoryId": 3
+    },
+    {
+      "id": "0b31",
+      "title": "Internet",
+      "amount": 281.79,
+      "date": "2025-03-16T21:06",
+      "categoryId": 3
+    },
+    {
+      "id": "a584",
+      "title": "Flight",
+      "amount": 345.63,
+      "date": "2025-03-16T18:46",
+      "categoryId": 2
+    },
+    {
+      "id": "0f1e",
+      "title": "Movie",
+      "amount": 94.64,
+      "date": "2025-03-16T13:22",
+      "categoryId": 4
+    },
+    {
+      "id": "709d",
+      "title": "Lunch",
+      "amount": 399.58,
+      "date": "2025-03-17T07:17",
+      "categoryId": 1
+    },
+    {
+      "id": "104e",
+      "title": "Coffee",
+      "amount": 95.23,
+      "date": "2025-03-17T23:57",
+      "categoryId": 1
+    },
+    {
+      "id": "da97",
+      "title": "Gas Bill",
+      "amount": 333.69,
+      "date": "2025-03-18T15:59",
+      "categoryId": 3
+    },
+    {
+      "id": "b629",
+      "title": "Watch",
+      "amount": 216.76,
+      "date": "2025-03-19T22:20",
+      "categoryId": 5
+    },
+    {
+      "id": "dd63",
+      "title": "Snacks",
+      "amount": 307.84,
+      "date": "2025-03-19T13:47",
+      "categoryId": 1
+    },
+    {
+      "id": "fd6b",
+      "title": "T-shirt",
+      "amount": 265.62,
+      "date": "2025-03-20T22:32",
+      "categoryId": 5
+    },
+    {
+      "id": "6004",
+      "title": "Dinner",
+      "amount": 174.71,
+      "date": "2025-03-20T10:47",
+      "categoryId": 1
+    },
+    {
+      "id": "7a23",
+      "title": "Movie",
+      "amount": 327.07,
+      "date": "2025-03-20T20:14",
+      "categoryId": 4
+    },
+    {
+      "id": "cb6f",
+      "title": "Game",
+      "amount": 419.69,
+      "date": "2025-03-21T13:50",
+      "categoryId": 4
+    },
+    {
+      "id": "a4f1",
+      "title": "T-shirt",
+      "amount": 186.31,
+      "date": "2025-03-21T12:51",
+      "categoryId": 5
+    },
+    {
+      "id": "7e8a",
+      "title": "Lunch",
+      "amount": 400.48,
+      "date": "2025-03-22T16:35",
+      "categoryId": 1
+    },
+    {
+      "id": "841a",
+      "title": "Headphones",
+      "amount": 429.93,
+      "date": "2025-03-22T19:24",
+      "categoryId": 5
+    },
+    {
+      "id": "4857",
+      "title": "Water Bill",
+      "amount": 85.82,
+      "date": "2025-03-23T22:24",
+      "categoryId": 3
+    },
+    {
+      "id": "d8ed",
+      "title": "Water Bill",
+      "amount": 122.25,
+      "date": "2025-03-23T20:49",
+      "categoryId": 3
+    },
+    {
+      "id": "1d72",
+      "title": "Snacks",
+      "amount": 365.75,
+      "date": "2025-03-23T19:25",
+      "categoryId": 1
+    },
+    {
+      "id": "481e",
+      "title": "Snacks",
+      "amount": 182.04,
+      "date": "2025-03-24T12:59",
+      "categoryId": 1
+    },
+    {
+      "id": "f9e5",
+      "title": "Breakfast",
+      "amount": 343.14,
+      "date": "2025-03-24T09:21",
+      "categoryId": 1
+    },
+    {
+      "id": "a145",
+      "title": "Gas Bill",
+      "amount": 130.13,
+      "date": "2025-03-24T09:19",
+      "categoryId": 3
+    },
+    {
+      "id": "80d0",
+      "title": "Flight",
+      "amount": 77.81,
+      "date": "2025-03-25T14:24",
+      "categoryId": 2
+    },
+    {
+      "id": "d7ef",
+      "title": "Headphones",
+      "amount": 146.4,
+      "date": "2025-03-26T23:40",
+      "categoryId": 5
+    },
+    {
+      "id": "825e",
+      "title": "Game",
+      "amount": 105.29,
+      "date": "2025-03-26T11:10",
+      "categoryId": 4
+    },
+    {
+      "id": "775f",
+      "title": "Lunch",
+      "amount": 100.9,
+      "date": "2025-03-26T23:43",
+      "categoryId": 1
+    },
+    {
+      "id": "d454",
+      "title": "Train Ticket",
+      "amount": 431.32,
+      "date": "2025-03-27T10:55",
+      "categoryId": 2
+    },
+    {
+      "id": "b805",
+      "title": "Bus Pass",
+      "amount": 452.18,
+      "date": "2025-03-27T15:50",
+      "categoryId": 2
+    },
+    {
+      "id": "ace9",
+      "title": "Concert",
+      "amount": 468.99,
+      "date": "2025-03-28T15:24",
+      "categoryId": 4
+    },
+    {
+      "id": "1f4b",
+      "title": "Movie",
+      "amount": 199.12,
+      "date": "2025-03-28T08:37",
+      "categoryId": 4
+    },
+    {
+      "id": "e1bb",
+      "title": "Dinner",
+      "amount": 155.15,
+      "date": "2025-03-28T10:04",
+      "categoryId": 1
+    },
+    {
+      "id": "e7d2",
+      "title": "Spotify",
+      "amount": 267.73,
+      "date": "2025-03-29T18:37",
+      "categoryId": 4
+    },
+    {
+      "id": "1c71",
+      "title": "Netflix",
+      "amount": 380.2,
+      "date": "2025-03-30T10:26",
+      "categoryId": 4
+    },
+    {
+      "id": "bbc5",
+      "title": "Movie",
+      "amount": 393.64,
+      "date": "2025-03-31T19:22",
+      "categoryId": 4
+    },
+    {
+      "id": "ac34",
+      "title": "Fuel",
+      "amount": 168.56,
+      "date": "2025-04-01T11:18",
+      "categoryId": 2
+    },
+    {
+      "id": "7ed5",
+      "title": "Shoes",
+      "amount": 87.23,
+      "date": "2025-04-01T17:59",
+      "categoryId": 5
+    },
+    {
+      "id": "e657",
+      "title": "Train Ticket",
+      "amount": 387.89,
+      "date": "2025-04-02T15:39",
+      "categoryId": 2
+    },
+    {
+      "id": "2a06",
+      "title": "Netflix",
+      "amount": 481.95,
+      "date": "2025-04-02T21:25",
+      "categoryId": 4
+    },
+    {
+      "id": "4825",
+      "title": "Coffee",
+      "amount": 351.49,
+      "date": "2025-04-03T21:20",
+      "categoryId": 1
+    },
+    {
+      "id": "a89e",
+      "title": "T-shirt",
+      "amount": 328.27,
+      "date": "2025-04-03T20:39",
+      "categoryId": 5
+    },
+    {
+      "id": "a6dd",
+      "title": "Netflix",
+      "amount": 439.15,
+      "date": "2025-04-04T11:02",
+      "categoryId": 4
+    },
+    {
+      "id": "fb58",
+      "title": "Water Bill",
+      "amount": 414,
+      "date": "2025-04-04T11:01",
+      "categoryId": 3
+    },
+    {
+      "id": "5083",
+      "title": "Watch",
+      "amount": 473.21,
+      "date": "2025-04-05T08:38",
+      "categoryId": 5
+    },
+    {
+      "id": "4276",
+      "title": "T-shirt",
+      "amount": 133.9,
+      "date": "2025-04-05T16:59",
+      "categoryId": 5
+    },
+    {
+      "id": "9dde",
+      "title": "Bag",
+      "amount": 239.55,
+      "date": "2025-04-05T14:44",
+      "categoryId": 5
+    },
+    {
+      "id": "9eb4",
+      "title": "Spotify",
+      "amount": 413.05,
+      "date": "2025-04-06T07:37",
+      "categoryId": 4
+    },
+    {
+      "id": "b35f",
+      "title": "Train Ticket",
+      "amount": 272.45,
+      "date": "2025-04-06T07:25",
+      "categoryId": 2
+    },
+    {
+      "id": "2a40",
+      "title": "Game",
+      "amount": 293.45,
+      "date": "2025-04-07T09:23",
+      "categoryId": 4
+    },
+    {
+      "id": "65f2",
+      "title": "Mobile Recharge",
+      "amount": 168.34,
+      "date": "2025-04-07T16:57",
+      "categoryId": 3
+    },
+    {
+      "id": "d9d5",
+      "title": "Bag",
+      "amount": 292.86,
+      "date": "2025-04-08T08:55",
+      "categoryId": 5
+    },
+    {
+      "id": "0329",
+      "title": "SUKHDEV VAISHNO DHABA",
+      "amount": 749,
+      "date": "2025-03-14T08:42:00.000Z",
+      "categoryId": 1
+    },
+    {
+      "id": "539d",
+      "title": "SUKHDEV VAISHNO DHABA",
+      "amount": 749,
+      "date": "2025-04-15T08:43:00.000Z",
+      "categoryId": 1
+    }
+  ]
+}
