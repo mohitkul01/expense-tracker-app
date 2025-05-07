@@ -1,8 +1,8 @@
 from rest_framework import viewsets, status
 from .models import User, Category, Expense
 from .serializers import UserSerializer, CategorySerializer, ExpenseSerializer
-from rest_framework.decorators import api_view
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny
 from rest_framework.response import Response
 from django.contrib.auth import authenticate, login, logout
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -11,6 +11,7 @@ import uuid
 # Create your views here.
 
 @api_view(['POST'])
+@permission_classes([AllowAny])
 def login_view(request):
     username = request.data.get('username')
     password = request.data.get('password')
