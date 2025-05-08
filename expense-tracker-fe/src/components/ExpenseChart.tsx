@@ -12,6 +12,7 @@ import {
   Cell,
   Legend,
 } from 'recharts'
+
 import dayjs from 'dayjs'
 import weekOfYear from 'dayjs/plugin/weekOfYear'
 import { Expense } from '../interfaces/Expense'
@@ -23,6 +24,7 @@ dayjs.extend(weekOfYear)
 const COLORS = ['#5b42f3', '#1fc3aa', '#ff7676', '#ffa41b', '#7d5fff', '#00b894']
 
 type Timeframe = 'day' | 'week' | 'month'
+
 
 interface LineChartData {
   label: string
@@ -41,7 +43,7 @@ const ExpenseChart = () => {
   useEffect(() => {
     const load = async () => {
       const data = await fetchAllExpenses()
-      setExpenses(data)
+      setExpenses(data.map((e: { amount: any; date: string | number | Date }) => ({ ...e, amount: Number(e.amount), date: new Date(e.date) })))
     }
     load()
   }, [])
@@ -113,6 +115,7 @@ const ExpenseChart = () => {
                 <linearGradient id="colorArea" x1="0" y1="0" x2="0" y2="1">
                   <stop offset="5%" stopColor="#5b42f3" stopOpacity={0.8} />
                   <stop offset="95%" stopColor="#5b42f3" stopOpacity={0.1} />
+
                 </linearGradient>
               </defs>
               <XAxis dataKey="label" />
@@ -120,6 +123,7 @@ const ExpenseChart = () => {
               <CartesianGrid strokeDasharray="3 3" />
               <Tooltip />
               <Area type="monotone" dataKey="value" stroke="#5b42f3" fill="url(#colorArea)" />
+
             </AreaChart>
           </ResponsiveContainer>
         </div>

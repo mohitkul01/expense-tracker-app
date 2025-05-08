@@ -26,9 +26,8 @@ const Login = () => {
 
     try {
       await authService.login(form.username, form.password);
-      
-      // window.location.href = '/'
           navigate('/');
+
     } catch (err: any) {
       alert(err.message);
     }

@@ -3,8 +3,8 @@ import { Expense } from "../interfaces/Expense";
 import api from "./api";
 
 export const fetchAllExpenses = async () => {
-  const user = JSON.parse(localStorage.getItem("user") || "{}");
-  if (!user || !user.id) throw new Error("User not logged in");
+  // const user = JSON.parse(localStorage.getItem("user") || "{}");
+  // if (!user || !user.id) throw new Error("User not logged in");
 
   const response = await api.get(`/expenses/`);
   return response.data;
