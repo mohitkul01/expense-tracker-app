@@ -36,7 +36,7 @@ const Register = () => {
     if (!validate()) return;
 
     try {
-      const user: User = await authService.register(form);
+      await authService.register(form);
       navigate('/');
     } catch (err: any) {
       alert(err.message);
