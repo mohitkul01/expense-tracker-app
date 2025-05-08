@@ -39,7 +39,7 @@ api.interceptors.response.use(
                 const user = JSON.parse(localStorage.getItem('user') || '{}')
                 const refresh = user?.refresh;
 
-                const res = await axios.post(`http://localhost:8000/api/token/refresh/`, {refresh: refresh,})
+                const res = await axios.post(`https://expense-tracker-app-wkse.onrender.com/api/token/refresh/`, {refresh: refresh,})
 
                 const newAccess = res.data.access
 
