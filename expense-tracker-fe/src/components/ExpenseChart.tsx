@@ -1,89 +1,104 @@
 import { useEffect, useState } from 'react'
 import {
+  ResponsiveContainer,
   AreaChart,
   Area,
-  PieChart,
-  Pie,
-  Tooltip,
-  ResponsiveContainer,
-  CartesianGrid,
   XAxis,
   YAxis,
+  CartesianGrid,
+  Tooltip,
+  PieChart,
+  Pie,
   Cell,
-  Legend
+  Legend,
 } from 'recharts'
 import dayjs from 'dayjs'
 import weekOfYear from 'dayjs/plugin/weekOfYear'
 import { Expense } from '../interfaces/Expense'
-import { ChartData } from '../interfaces/ChartData'
-import '../styles/expense-chart.scss'
 import { fetchAllExpenses } from '../services/expense.service'
+import '../styles/expense-chart.scss'
 
 dayjs.extend(weekOfYear)
 
 const COLORS = ['#5b42f3', '#1fc3aa', '#ff7676', '#ffa41b', '#7d5fff', '#00b894']
 
+type Timeframe = 'day' | 'week' | 'month'
+
+interface LineChartData {
+  label: string
+  value: number
+}
+
+interface PieChartData {
+  name: string
+  value: number
+}
+
 const ExpenseChart = () => {
   const [expenses, setExpenses] = useState<Expense[]>([])
-  const [timeframe, setTimeframe] = useState<'day' | 'week' | 'month'>('month')
+  const [timeframe, setTimeframe] = useState<Timeframe>('month')
 
   useEffect(() => {
-    const loadExpenses = async () => {
+    const load = async () => {
       const data = await fetchAllExpenses()
       setExpenses(data)
     }
-    loadExpenses()
+    load()
   }, [])
 
-  const groupExpenses = (): ChartData[] => {
-    const groups: Record<string, number> = {}
+  const getLineChartData = (): LineChartData[] => {
+    const grouped: Record<string, number> = {}
 
     expenses.forEach((expense) => {
       const date = dayjs(expense.date)
-      let key: string
+      let key = ''
 
-      if (timeframe === 'day') {
-        key = date.format('MMM D')
-      } else if (timeframe === 'week') {
-        key = `Week ${date.week()}`
-      } else {
-        key = date.format('MMM YYYY')
+      switch (timeframe) {
+        case 'day':
+          key = date.format('MMM D')
+          break
+        case 'week':
+          key = `Week ${date.week()}`
+          break
+        case 'month':
+          key = date.format('MMM YYYY')
+          break
       }
 
-      if (!groups[key]) groups[key] = 0
-      groups[key] += expense.amount
+      const amount = Number(expense.amount)
+      if (!isNaN(amount)) {
+        grouped[key] = (grouped[key] || 0) + amount
+      }
     })
 
-    return Object.entries(groups).map(([label, value]) => ({
+    return Object.entries(grouped).map(([label, value]) => ({
       label,
       value: parseFloat(value.toFixed(2)),
     }))
   }
 
-  const getPieData = () => {
+  const getPieChartData = (): PieChartData[] => {
     const grouped: Record<string, number> = {}
-    expenses.forEach((exp) => {
-      const cat = exp.category?.name || 'Unknown'
-      if (!grouped[cat]) grouped[cat] = 0
-      grouped[cat] += exp.amount
+
+    expenses.forEach((expense) => {
+      const category = expense.category?.name || 'Uncategorized'
+      const amount = Number(expense.amount)
+      if (!isNaN(amount)) {
+        grouped[category] = (grouped[category] || 0) + amount
+      }
     })
+
     return Object.entries(grouped).map(([name, value]) => ({
       name,
-      value: parseFloat(value.toFixed(2))
+      value: parseFloat(value.toFixed(2)),
     }))
   }
-
-  const chartData = groupExpenses()
-  const pieData = getPieData()
 
   return (
     <div className="expense-chart">
       <div className="chart-header">
-        <h3>Spending Overview</h3>
-        <select
-          value={timeframe}
-          onChange={(e) => setTimeframe(e.target.value as 'day' | 'week' | 'month')}
-        >
+        <h2>Expense Overview</h2>
+        <select value={timeframe} onChange={(e) => setTimeframe(e.target.value as Timeframe)}>
           <option value="day">Daily</option>
           <option value="week">Weekly</option>
           <option value="month">Monthly</option>
@@ -93,23 +108,18 @@ const ExpenseChart = () => {
       <div className="chart-grid">
         <div className="line-chart">
           <ResponsiveContainer width="100%" height={300}>
-            <AreaChart data={chartData}>
+            <AreaChart data={getLineChartData()}>
               <defs>
-                <linearGradient id="colorSpend" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="10%" stopColor="#5b42f3" stopOpacity={0.7} />
-                  <stop offset="90%" stopColor="#5b42f3" stopOpacity={0.1} />
+                <linearGradient id="colorArea" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="5%" stopColor="#5b42f3" stopOpacity={0.8} />
+                  <stop offset="95%" stopColor="#5b42f3" stopOpacity={0.1} />
                 </linearGradient>
               </defs>
               <XAxis dataKey="label" />
               <YAxis />
               <CartesianGrid strokeDasharray="3 3" />
               <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="value"
-                stroke="#5b42f3"
-                fill="url(#colorSpend)"
-              />
+              <Area type="monotone" dataKey="value" stroke="#5b42f3" fill="url(#colorArea)" />
             </AreaChart>
           </ResponsiveContainer>
         </div>
@@ -118,14 +128,13 @@ const ExpenseChart = () => {
           <ResponsiveContainer width="100%" height={300}>
             <PieChart>
               <Pie
-                data={pieData}
+                data={getPieChartData()}
                 dataKey="value"
                 nameKey="name"
                 outerRadius={100}
-                fill="#8884d8"
                 label
               >
-                {pieData.map((entry, index) => (
+                {getPieChartData().map((_, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '../services/auth.service';
-import { User } from '../interfaces/User';
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -36,7 +35,7 @@ const Register = () => {
     if (!validate()) return;
 
     try {
-      const user: User = await authService.register(form);
+      await authService.register(form);
       navigate('/');
     } catch (err: any) {
       alert(err.message);

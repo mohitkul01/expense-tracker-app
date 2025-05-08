@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '../services/auth.service';
-import { User } from '../interfaces/User';
 
 const Login = () => {
   const [form, setForm] = useState({ username: '', password: '' });
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -26,9 +25,10 @@ const Login = () => {
     if (!validate()) return;
 
     try {
-      const user: User = await authService.login(form.username, form.password);
+      await authService.login(form.username, form.password);
       
-      window.location.href = '/'
+      // window.location.href = '/'
+          navigate('/');
     } catch (err: any) {
       alert(err.message);
     }
