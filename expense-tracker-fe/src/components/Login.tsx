@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import authService from '../services/auth.service';
-import { User } from '../interfaces/User';
 
 const Login = () => {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -27,9 +26,8 @@ const Login = () => {
 
     try {
       await authService.login(form.username, form.password);
-      
-      // window.location.href = '/'
-      navigate('/')
+          navigate('/');
+
     } catch (err: any) {
       alert(err.message);
     }
